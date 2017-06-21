@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Lily+Script+One');
+@import url('https://fonts.googleapis.com/css?family=Miriam+Libre | Oswald');
+body{
+	margin: 0;padding: 0;
+	background: url(../img/watch-bates-motel-online.jpeg) center center fixed;
+	background-size: cover;
+}
+header{
+	width: 100%;
+	background-color: #395491;
+	position: fixed;
+}
+/*ocultando botao checkbox*/
+#btn-menu{
+	display: none;
+}
+img{ width: 30px; height: 30px; padding: 5px;}
+/*ocultando o icone menu*/
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 20px;
+}
+/*quando passar o mouse*/
+header label:hover{
+	cursor: pointer;
+}
+/*formatando lista*/
+.menu ul{
+	margin: 0px;
+	list-style: none;
+	display: flex;
+	position: relative;
+	left: 40%;
+}
+/*quando passar o mouse*/
+.menu li:hover{
+	color: #ccc;
+
+}
+/*formatando links */
+.menu li a{
+	display: block;
+	padding: 15px 20px;
+	text-decoration: none;
+	color: white;
+	font-family: 'Miriam Libre', sans-serif;
+	font-size: 20px;
+}
+.banner{
+	width: 100%;
+	height: 800px;
+	background: url(../img/banner.jpg) center 50px fixed;
+	background-size:cover;
+}
+.txt{
+	white-space: pre-wrap;
+	color: white;
+	font-size: 30px;
+	font-family: 'Fredoka One', cursive;
+	height: 300px;
+	width: 50%;
+	margin: 0 auto;
+}
+.titulo{
+	font-size: 4em;
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	margin:0;
+	text-align: left;
+	padding-top: 120px;
+	opacity: 0.8;
+	height: 300px;
+	width: 80%;
+}
+h3{
+	font-family: 'Lily Script One', cursive;
+	text-align: center;
+	font-size: 50px;
+	color: white;
+	margin: 0;
+}
+em{
+	font-family: 'Miriam Libre', sans-serif;
+	font-size: 20px;
+	color: white;
+	margin-left: 20%;
+}
+span{
+	white-space: pre-wrap;
+	color:white;
+	font-family: 'Miriam Libre', sans-serif;
+	font-size: 0.8em;
+}
+.desc{
+	font-family: 'Miriam Libre', sans-serif;
+	font-size: 25px;
+	color: orange;
+	margin:0;
+}
+i{
+	color:white;
+}
+label{
+	color: white;
+}
+footer{
+	width: 100%;
+	height: 100px;
+	background-color: black;
+	border-top:3px solid #395491;
+	margin-top: 30%;
+	clear: both;
+}
+.logo{
+	width: 300px;
+	height: 80px;
+	float: left;
+	margin-left:30px;
+}
+.footer{
+	width:580px;
+	height: 90px;
+	float: left;
+	opacity: 0.3;
+	clear: both;
+}
+.banner1{
+	width: 100%;
+	height: 600px;
+	background: url(../img/normero-wallpaper-3c.png) center center fixed;
+	background-size: cover;
+}
+.banner2{
+	width: 100%;
+	height: 600px;
+	background: url(../img/banner1.jpg) center 50px fixed;
+	background-size: cover;
+}
+.banner3{
+	width: 100%;
+	height: 600px;
+	background: url(../img/banner3.png) center center fixed;
+	background-size: cover;
+}
+.conteudo3{
+	width: 100%;
+	height: 800px;
+	margin:0 auto;
+}
+.temporada{
+	width: 220px;
+	height: 307px;
+	border: 3px solid white;
+	float: left;
+}
+.s1{
+	width: 680px;
+	height: 320px;
+	/*border: 3px solid white;*/
+	border-radius: 1%;
+	padding: 10px;
+	margin:0 auto;
+	background: rgba(255,255,255, 0.3);
+}
+.s2{
+	width: 570px;
+	height: 220px;
+	/*border: 3px solid white;*/
+	border-radius: 1%;
+	padding: 10px;
+	margin: 30px;
+	float: left;
+}
+.atores{
+	width: 200px;
+	height: 200px;
+	border-radius:50%;
+	border: 3px dotted white;
+	float: left;
+}
+@media (max-width: 768px) {
+	h1{
+		display: none;
+	}
+	.logo{
+		display: none;
+	}
+	header label{
+		display: block;
+	}
+	.menu{
+		position: absolute;
+		width: 30%;
+		margin-left: -60%;
+		/*background-color: #3a589d;*/
+		transition: all 0.3s;
+	}
+
+	.menu ul{
+		flex-direction: column;
+	}
+	.menu li{
+		border-top: 1px solid #fff;
+	}
+	#btn-menu:checked~ .menu{
+		margin: 0;
+	}
+	.footer, footer{
+		clear: both;
+		z-index: 1000;
+	}
+}
+
+
